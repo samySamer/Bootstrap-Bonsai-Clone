@@ -1,0 +1,346 @@
+@media (min-width:768px){
+    html{
+        overflow-x: hidden;
+
+    }
+    body{
+        position: relative;
+        contain: layout;
+    }
+    header{
+        background-color: transparent;
+        padding:2.5rem 8rem;
+        transition: all 0.5s;
+    }
+    .scrolled {
+        background: white;
+    }
+    body::before{
+        content: "";
+        position: absolute;
+        background-color: var(--baby-blue);
+        width: 100%;
+        aspect-ratio: 1/1;
+        transform: rotate(-14deg);
+        top: -2%;
+        right: -63%;
+        clip-path: inset(0 0 0 0); /* This clips any overflow */
+
+    }
+    .offer{
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 8rem;
+    }
+    .plans{
+        font-size: 4rem;
+        line-height: 4.8rem;
+        margin-bottom: 0;
+    }
+    .month{
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }
+    .cards{
+        padding: 2rem 5rem;
+    }
+    .card-header{
+        margin-top:2rem;
+        padding: 1rem;
+    }
+    .card-header h1{
+        font-size: 2.6rem;
+        line-height: 3.6rem;
+    }
+    .card-special::before{
+        background-color: var(--Persian-green);
+        height: 5rem;
+        font-weight: 800;
+        font-size: 2rem;
+        top: 50px;
+        right: -38%;
+        transform: rotate(40deg);
+    }
+    .header{
+        font-size: 3.2rem;
+        line-height: 4.5rem;
+
+    }
+
+    .small-card h2{
+        margin-bottom: 0;
+    }
+    .small-card h4{
+        color: rgb(76, 82, 90);
+        font-size: 2.2rem ;
+    }
+    .small-card .flex{
+        align-items: center;
+    }
+    .fr{
+        order:2;
+        font-size: 3.2rem !important;
+        line-height: 3rem;
+        margin-right: 3rem;
+    }
+    .month{
+        font-size: 1.4rem;
+        font-weight: 100;
+    }
+    .small-card .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .small-cards{
+        align-items: start;
+        width: 90%;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .small-card{
+        flex-direction: row;
+        width: 68.8rem;
+        align-items: center;
+        gap: 2rem;
+        padding: 4rem 4rem;
+    }
+    .hero{
+        flex-direction: row;
+        font-weight: 400;
+        font-size: 4.4rem;
+        line-height: 5.7rem;
+        justify-content: start;
+        margin: 4rem;
+        padding: 4.8rem 3.2rem;
+        justify-content: space-between;
+    }
+    .hero h1{
+        font-weight: 400;
+        justify-content: start;
+        font-size: 4.4rem;
+        line-height: 5.7rem;   
+        padding: 1rem 2.rem;
+    }
+    .hero .signup{
+        font-size: 1.4rem;
+        flex-shrink: 0;
+    }
+
+    .questions h1{
+        font-size: 3.2rem;
+        font-weight: 700;
+        line-height: 3.8rem;
+        color: var(--Persian-green);
+    }
+    .questions ul{
+        padding: 0;
+        padding-top: 2rem;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        justify-content: space-between;
+        width: 70%;
+    }
+    footer{
+        padding: 4rem 10rem 4rem 2rem;       
+        flex-direction: row;
+        justify-content: space-between;
+        gap:2rem;
+        margin-bottom: 4.8rem;
+    } 
+}
+
+
+@media (min-width:1024px) {
+    html{
+        overflow-x: hidden;
+    }
+
+    header{
+        background-color: white;
+    }
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        position: relative;
+        contain: layout;
+    }
+    body::before{
+        content: "";
+        position: absolute;
+        background-color: var(--baby-blue);
+        width: 100%;
+        aspect-ratio: 1/1;
+        transform: rotate(-42deg);
+        top: -25%;
+        right: 7%;
+    }
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+	font-family: 'proxima-nova', sans-serif;
+    gap:20rem;
+    margin-bottom: 15rem;
+    position: sticky;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap:10rem;
+}
+.month-change{
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.year{
+    font-size: 1.6rem;
+}
+.img{
+    bottom:50%;
+    right:32.5%;
+
+}
+.btn-nav{
+    display: none;
+}
+.offer{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: 4.5rem;
+}
+.plans{
+    margin: 0;
+    justify-content: center;
+    align-self:center;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 4.8rem;
+}
+.small-cards{
+    justify-content: center;
+    margin-bottom: 10rem;
+    align-items: center;
+}
+.cards{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+
+}
+.card-header{
+    margin-top: 2rem;
+    color: rgb(76,82,90);
+
+}
+.card-header h1{
+    font-size: 2.6rem;
+    line-height: 3.6rem;
+    font-weight: 600;
+}
+.card-header p {
+    font-size:1.4rem;
+    line-height: 2rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+.card-special::before{
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: 600;
+    height: 4.2rem;
+    top: 50px;
+    right: -30%;
+    transform: rotate(45deg);
+    background-color: var(--Persian-green);
+}
+.card-monthly, .card-yearly{
+    height: 105rem;
+    padding: 4rem 5rem;
+    gap:4rem;
+    width: 35.8rem;
+}
+.card-monthly .signup , .card-yearly .signup{
+    margin-top: auto;
+}
+.header{
+    font-size: 3.2rem;
+}
+
+
+.small-card{
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.2rem;
+    width: 115rem;
+}
+.small-card h2{
+    margin-bottom: 0;
+}
+.small-card h4{
+    color: rgb(76, 82, 90);
+    font-size: 2.2rem ;
+}
+.small-card .flex{
+    align-items: center;
+}
+.fr{
+    order:2;
+    font-size: 3.2rem !important;
+    line-height: 3rem;
+    margin-right: 3rem;
+}
+.month{
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+.small-card .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero{
+    flex-direction: row;
+    justify-self: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 6rem;
+    gap:10rem;
+}
+.hero h1{
+    text-align: start;
+    font-size: 4.4rem;
+    font-weight: 5.7rem;
+}  
+.questions ul{
+    padding: 0;
+    width: 40%;
+    justify-content: center;
+}
+.questions{
+    gap:4rem;
+    margin-bottom: 12rem;
+}
+.questions h1{
+
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 3.8rem;
+}
+footer{
+    flex-direction: row;
+    justify-content: space-around;
+    gap:2rem;
+    margin-bottom: 4.8rem;
+} 
+}
